@@ -1,0 +1,43 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.coverpage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-image: url(http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+@media (min-width: 1200px) {
+    .introduction .container{
+        max-width: 600px;
+    }
+}
+.btn-resume {
+	margin-top: 15px;
+	font-family: "Roboto";
+	font-weight: 400;
+	line-height: 1.33;
+	border-radius: 6px;
+	border: solid 2px #F33446;
+	background: transparent;
+	text-align: center;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+@media (min-width: 1200px) {
+    .contact .container{
+        max-width: 800px;
+    }
+}
+.contact .col-md-3 {
+	width: 25%;
+	float: left;
+}
