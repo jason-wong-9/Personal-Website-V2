@@ -1,11 +1,12 @@
 .navbar {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 1.5em;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5em;
 }
 /* navbar */
 .navbar-default {
-    background-color: #F8F8F8;
+    background-color: transparent;
     border-color: #E7E7E7;
+    background-image: none;
 }
 /* title */
 .navbar-default .navbar-brand {
