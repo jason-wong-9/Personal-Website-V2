@@ -48,3 +48,6 @@ h3 {
 .introduction, .portfolio, .contact {
     padding-top: 40px;
 }
+.contact {
+    padding-bottom: 40px;
+}
