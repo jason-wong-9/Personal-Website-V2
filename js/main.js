@@ -4,7 +4,6 @@ $(document).ready(function(){
   navIntroActive();
   navPortfolioActive();
   navContactActive();
-  changeActiveOnScroll();
 });
 
 // navbar color changes when scrolled to introduction div
