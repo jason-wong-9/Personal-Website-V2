@@ -18,6 +18,7 @@ body {
 
 h3 {
     font-size: 3em;
+    padding-bottom: 10px;
 }
 @media (min-width: 1200px) {
     .introduction .container{
@@ -49,5 +50,16 @@ h3 {
     padding-top: 40px;
 }
 .contact {
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
+.thumbnail {
+    background: #210B61;
+}
+.thumbnail:hover {
+    background: #240B3B;
+}
+.thumbnail img { 
+    min-height:300px;
+    height:300px; 
+}
+
