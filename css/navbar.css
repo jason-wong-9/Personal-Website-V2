@@ -4,13 +4,14 @@
 }
 /* navbar */
 .navbar-default {
-    background-color: rgba(255,0,0,0.3);
+    visibility: hidden;
+    background-color: rgba(255,0,0,1);
     border-color: #E7E7E7;
     background-image: none;
 }
 /* title */
 .navbar-default .navbar-brand {
-    color: #777;
+    color: #FFF;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -18,7 +19,7 @@
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    color: #FFF;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -74,8 +75,11 @@
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
     color: blue;
-    background-color: black;
+    background-color: red;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
     background-image: none;
+}
+.hide-visibility {
+    visibility: hidden;
 }

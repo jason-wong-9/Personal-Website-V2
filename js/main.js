@@ -1,9 +1,9 @@
 $(document).ready(function(){  
   navbarColorChange();
   navitemClicked();
-  navIntroActive();
-  navPortfolioActive();
-  navContactActive();
+  // navIntroActive();
+  // navPortfolioActive();
+  // navContactActive();
 });
 
 // navbar color changes when scrolled to introduction div
@@ -15,9 +15,9 @@ var navbarColorChange = function(){
     $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top - 50.5) {
-        $(".navbar-default").css('background-color', 'rgb(255,0,0)');
+        $(".navbar-default").css('visibility', 'visible');
       } else {
-        $(".navbar-default").css('background-color', 'rgba(255,0,0,0.3)');
+        $(".navbar-default").css('visibility', 'hidden');
       }
     });
   }
