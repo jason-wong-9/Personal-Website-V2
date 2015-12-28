@@ -27,19 +27,26 @@ p {
     }
 }
 .btn-resume {
-    margin-top: 15px;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 1.5em;
-    line-height: 1.33;
-    border-radius: 6px;
-    border: solid 2px #F33446;
-    background: transparent;
-    text-align: center;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-    width: 200px; 
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    -webkit-box-shadow: 2px 4px 6px #666666;
+    -moz-box-shadow: 2px 4px 6px #666666;
+    box-shadow: 2px 4px 6px #666666;
+    font-family: Arial;
+    color: #466b75;
+    font-size: 12px;
+    background: #ffffff;
+    padding: 8px 33px 8px 33px;
+    border: solid #7FB7C8 3px;
+    text-decoration: none;
+    width: 200px;
+    cursor:pointer;
     margin: 0 auto;
+}
+.btn-resume:hover {
+    background: #e1f0fa;
+    text-decoration: none;
 }
 @media (min-width: 1200px) {
     #contact .container{
@@ -87,6 +94,12 @@ p {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
+}
+.modal-content {
+    border: 5px solid #7FB7C8;
+}
+.modal-body {
+    margin-left: 10px;
 }
 h1 {
     font-size: 7em;
