@@ -1,210 +1,192 @@
 <html>
 <head>
-  <title>Jason Wong</title>
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <title>Jason Wong</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-  <!-- Material Design Iconic Font -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!-- Material Design Iconic Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
-  <!-- Custom css -->
-  <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/navbar.css" type="text/css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">
 
-  <!-- Custom Javascript -->
-  <script type="text/javascript" src="js/main.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" id="nav-home" href="#" onclick="return false;">Jason Wong</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li id="nav-introduction"><a href="#introduction" onclick="return false;">INTRODUCTION</a></li>
-            <li id="nav-portfolio"><a href="#portfolio" onclick="return false;">PORTFOLIO</a></li>
-            <li id="nav-contact"><a href="#contact" onclick="return false;">CONTACT</a></li>
-          </ul>
-        </div>
+    <!-- NavBar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="nav-home" href="#" onclick="return false;">Jason Wong</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="nav-introduction"><a href="#introduction" onclick="return false;">INTRODUCTION</a></li>
+                    <li id="nav-portfolio"><a href="#portfolio" onclick="return false;">PORTFOLIO</a></li>
+                    <li id="nav-contact"><a href="#contact" onclick="return false;">CONTACT</a></li>
+                </ul>
+            </div>
       </div>
-  </nav>
-  <div id = "coverpage" class="text-center">
-      
-    <div style="top: 50%; position: relative; transform: translateY(-50%);">
-        
-        <h1>Jason Wong</h1>
-        <div>Gamer . Developer . Singer</div>
-        
-    </div>
-    <div class="zmdi zmdi-caret-down zmdi-hc-5x animated bounce" style="position: absolute; bottom: 0; margin-left: -10x;"></div>
-        
-  </div>
+    </nav>
+    <!-- Cover Page -->
+    <div id = "coverpage" class="text-center">
 
-  <section id="introduction">
-     <div class="container text-center">
-       <div class="row">
-         <div class="col-lg-12">
-           <h3>Introduction</h3>
+        <div id = "tagname">
+            <h1>Jason Wong</h1>
+            <div>Gamer . Developer . Singer</div>
         </div>
-       </div>
-       <div class="row">
-        <div class="col-lg-12">
-          <p> Hello! My name is Jason Wong. I am a student living in Vancouver, while studying at the University of British Columbia. I am currently pursuing a specialization of  <a href="https://mybcom.sauder.ubc.ca/courses-money-enrolment/program-requirements/combined-major-in%C2%A0business-and-computer-science">Combined Major in Business and Computer Science </a>under the Bachelor of Commerce.</p>
-          <p>In school, I am involved in the club, iBookUnion, in which I am an executive for its Human Resources department. My responsibility includes the process of hiring, organizing club events, and promoting the club via social media. </p>
+        <div id = "arrowdown" class="zmdi zmdi-caret-down zmdi-hc-5x animated bounce"></div>
+
+    </div>
+    
+    <!-- Introduction -->
+    <section id="introduction">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Introduction</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p> Hello! My name is Jason Wong. I am a student living in Vancouver, while studying at the University of British Columbia. I am currently pursuing a specialization of  <a href="https://mybcom.sauder.ubc.ca/courses-money-enrolment/program-requirements/combined-major-in%C2%A0business-and-computer-science">Combined Major in Business and Computer Science </a>under the Bachelor of Commerce.</p>
+                    <p>In school, I am involved in the club, iBookUnion, in which I am an executive for its Human Resources department. My responsibility includes the process of hiring, organizing club events, and promoting the club via social media. </p>
           <p>In my spare time, I enjoy learning new programming languages, such that I can further enhance my coding skills, as well as gradually building up my portfolio. Recently I have been learning Website Development and iOS Swift Application Development.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class= "col-md-6 col-md-offset-3">
+                    <div class="text-center btn-resume">View Resume</div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class= "col-md-6 col-md-offset-3">
-          <div class="text-center btn-resume">View Resume</div>
+    </section>
+    
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Portfolio</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a class="thumbnail" href="#" data-toggle="modal" data-target="#myModal">
+                        <img src="img/course_watcher.png">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <!-- Course Watcher Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Course Watcher</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This is the first Java Application that I built from scratch. It serves the purpose of of watching courses on UBC SSC, in which it informs users through emails when there is a seat open for a specific course.</p>
+                    <p>Languages/ Frameworks</p>
+                    <p>Programming Language: Java</p>
+                    <p>External Libraries: JSoup (HTML Parsing) and JavaMail API (Sending emails)</p>
+                    <div class="text-center btn-resume">View on GitHub</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </section>
+    
+    <!-- Contact -->
 
-  <section id="portfolio">
-    <div class="container text-center">
-      <div class="row">
-          <div class="col-lg-12">
-              <h3>Portfolio</h3>
-          </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <a class="thumbnail" href="#" data-toggle="modal" data-target="#myModal">
-            <img src="img/course_watcher.png">
-          </a>
+    <section id="contact">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Contact</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
+                        <i class="zmdi zmdi-email"></i>
+                        <div class="social-text">jason_19960903<wbr>@hotmail.com</div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
+                        <i class="zmdi zmdi-email"></i>
+                        <div class="social-text">adrianblp<wbr>@gmail.com</div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
+                        <i class="zmdi zmdi-email"></i>
+                        <div class="social-text">adrianblp<wbr>@gmail.com</div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
+                        <i class="zmdi zmdi-email"></i>
+                        <div class="social-text">adrianblp<wbr>@gmail.com</div>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Course Watcher Modal -->
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+    </section>
+    
+    <!-- Footer -->
+    <section id = "footer">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Course Watcher</h4>
-        </div>
-        <div class="modal-body">
-          <p>This is the first Java Application that I built from scratch. It serves the purpose of of watching courses on UBC SSC, in which it informs users through emails when there is a seat open for a specific course.</p>
-            <p>Languages/ Frameworks</p>
-            <p>Programming Language: Java</p>
-            <p>External Libraries: JSoup (HTML Parsing) and JavaMail API (Sending emails)</p>
-          <div class="text-center btn-resume">
-            View on GitHub
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-    <!-- CFL Modal -->
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Course Watcher</h4>
-        </div>
-        <div class="modal-body text-center">
-          <p>Some text in the modal.</p>
-          <div class="text-center btn-resume">
-            View on GitHub
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <section id="contact">
-    <div class="container text-center">
-      <div class="row">
-          <div class="col-lg-12">
-              <h3>Contact</h3>
-          </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
-              <i class="zmdi zmdi-email"></i>
-              <div class="social-text">jason_19960903<wbr>@hotmail.com</div>
-            </a>
-          </div>
-          <div class="col-md-3">
-          <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
-              <i class="zmdi zmdi-email"></i>
-              <div class="social-text">adrianblp<wbr>@gmail.com</div>
-            </a>
-          </div>
-          <div class="col-md-3">
-          <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
-              <i class="zmdi zmdi-email"></i>
-              <div class="social-text">adrianblp<wbr>@gmail.com</div>
-            </a>
-          </div>
-          <div class="col-md-3">
-          <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
-              <i class="zmdi zmdi-email"></i>
-              <div class="social-text">adrianblp<wbr>@gmail.com</div>
-            </a>
-          </div>
-      </div>
-    </div>
-  </section>
-  <section id = "footer">
-
-  </section>
+    </section>
 </body>
 </html>

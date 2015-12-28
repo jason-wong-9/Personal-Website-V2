@@ -9,14 +9,9 @@ body {
     width: 100%;
     height: 100%;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background: url(../img/header.jpg) no-repeat center center fixed;
     background-position: center;
     background-size: cover;
-/*
-    display: flex;
-    justify-content: center;
-    align-items: center;
-*/
 }
 
 h3 {
@@ -98,6 +93,17 @@ h1 {
 }
 .zmdi-hc-5x {
     font-size: 7em;
+}
+#tagname {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+#arrowdown {
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    cursor: pointer;
 }
 /*
  * Animation configurations ( duration and fill mode )

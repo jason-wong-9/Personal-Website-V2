@@ -15,7 +15,7 @@
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #5E5E5E;
+    color: #FFF;
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
@@ -23,18 +23,18 @@
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #333;
+    color: #FFF;
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
+    color: #FFF;
     background-color: #E7E7E7;
 }
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
 .navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
+    color: #FFF;
     background-color: #D5D5D5;
 }
 /* caret */
