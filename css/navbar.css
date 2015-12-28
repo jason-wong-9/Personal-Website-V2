@@ -5,7 +5,7 @@
 /* navbar */
 .navbar-default {
     visibility: hidden;
-    background-color: rgba(255,0,0,1);
+    background-color: #7FB7C8;
     border-color: #E7E7E7;
     background-image: none;
 }
@@ -23,7 +23,7 @@
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #FFF;
+    color: black;
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 

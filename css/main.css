@@ -89,15 +89,30 @@ p {
   vertical-align: middle;
 }
 h1 {
-    font-size: 5em;
+    font-size: 7em;
 }
+
 .zmdi-hc-5x {
     font-size: 7em;
 }
 #tagname {
-    top: 40%;
+    top: 30%;
     position: relative;
     transform: translateY(-50%);
+}
+#tagline {
+    font-size: 2em;
+}
+@media only screen and (max-width: 720px) {
+    h1 {
+        font-size: 4em;
+    }
+    #tagline {
+        font-size: 1em;
+    }
+    #tagname {
+        top: 40%;
+    }
 }
 #arrowdown {
     position: absolute;

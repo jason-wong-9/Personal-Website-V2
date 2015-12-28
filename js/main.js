@@ -10,7 +10,7 @@ $(document).ready(function(){
 // navbar color changes when scrolled to introduction div
 var navbarColorChange = function(){
     var scroll_start = 0;
-    var startchange = $('#introduction');
+    var startchange = $('#portfolio');
     var offset = startchange.offset();
     if (startchange.length){
         $(document).scroll(function() { 
@@ -33,14 +33,14 @@ var navitemClicked = function(){
     });
     $("#arrowdown").click(function(){
         $("html,body").animate({
-            scrollTop: $("#introduction").offset().top-50},
+            scrollTop: $("#portfolio").offset().top-50},
             'slow');
     });
-    $("#nav-introduction a").click(function(){
-        $("html,body").animate({
-            scrollTop: $("#introduction").offset().top-50},
-            'slow');
-    });
+//    $("#nav-introduction a").click(function(){
+//        $("html,body").animate({
+//            scrollTop: $("#introduction").offset().top-50},
+//            'slow');
+//    });
     $("#nav-portfolio a").click(function(){
         $("html,body").animate({
             scrollTop: $("#portfolio").offset().top-50},

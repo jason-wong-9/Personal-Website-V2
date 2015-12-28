@@ -49,15 +49,16 @@
     <!-- Cover Page -->
     <div id = "coverpage" class="text-center fading">
 
-        <div id = "tagname" class="animate fadeInUp">
+        <div id = "tagname" class="animate fadeInUp">        
             <h1>Jason Wong</h1>
-            <div>Gamer . Developer . Singer</div>
+            <div id = "tagline">Gamer . Developer . Singer</div>
         </div>
         <div id = "arrowdown" class="zmdi zmdi-caret-down zmdi-hc-5x animated bounce"></div>
 
     </div>
     
     <!-- Introduction -->
+<!--
     <section id="introduction">
         <div class="container text-center">
             <div class="row">
@@ -79,51 +80,42 @@
             </div>
         </div>
     </section>
+-->
     
     <!-- Portfolio -->
     <section id="portfolio">
-        <div class="container text-center">
+        <div class="container-fixed text-center">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3>Portfolio</h3>
+                    <h3>My Lovely Works.</h3>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
-                    <a class="thumbnail" href="#" data-toggle="modal" data-target="#myModal">
+                <div class="col-md-6">
+                    <a class="thumbnail" href="#" data-toggle="modal" data-target="#MyCFLModal">
                         <img src="img/course_watcher.png">
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-                    </div>
+                <div class="col-md-6">
+                    <a class="thumbnail" href="#" data-toggle="modal" data-target="#moscrop-modal">
+                        <img src="img/course_watcher.png">
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-                    </div>
+                <div class="col-md-6">
+                    <a class="thumbnail" href="#" data-toggle="modal" data-target="#course-watcher-modal">
+                        <img src="img/course_watcher.png">
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://images-cdn.moviepilot.com/image/upload/c_fill,h_1875,w_3000/t_mp_quality/uploads_4293d887-e99f-4de7-b1c2-72866034b293-avatar-yo-jpg-19697.jpg">
-                    </div>
+                <div class="col-md-6">
+                    <a class="thumbnail" href="#" data-toggle="modal" data-target="#mind-modal">
+                        <img src="img/course_watcher.png">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Course Watcher Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
+    <div id="course-watcher-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -137,6 +129,78 @@
                     <p>Languages/ Frameworks</p>
                     <p>Programming Language: Java</p>
                     <p>External Libraries: JSoup (HTML Parsing) and JavaMail API (Sending emails)</p>
+                    <div class="text-center btn-resume">View on GitHub</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MyCFL Modal -->
+    <div id="MyCFLModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">MyCFL</h4>
+                </div>
+                <div class="modal-body">
+                    <p>A web application that is created during SportsHack in a team of three. It generates a CFL athlete who is most similar to your attributes (e.g. height, weight, and location)  and displays the latest feeds from his social medias</p>
+                    <p>Languages/ Frameworks</p>
+                    <p>Front-End Development: HTML, CSS, Javascript</p>
+                    <p>Back-End Development: Parse (Database), Python (Cosine Similarity for data analysis), Flask (RESTful API)</p>
+                    <div class="text-center btn-resume">View on GitHub</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Moscrop Official iOS Application Modal -->
+    <div id="moscrop-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Moscrop Official iOS Application</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Collaborated with a current student from Moscrop secondary school to develop an iOS application using Swift that displays school’s information, teachers’ contacts as well as recent clubs and events updates</p>
+                    <p>Languages/ Frameworks</p>
+                    <p>Programming Language: Swift</p>
+                    <p>Back-End Development: Parse (Database)</p>
+                    <div class="text-center btn-resume">View on GitHub</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Mind The Gap Modal -->
+    <div id="mind-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Moscrop Official iOS Application</h4>
+                </div>
+                <div class="modal-body">
+                    <p>An android application built in the CPSC 210 course. It displays the rail system in London along with real time data</p>
+                    <p>Languages/ Frameworks</p>
+                    <p>Programming Language: Java, Android</p>
+                    <p>External Libraries: OsmDroid (Display map)</p>
+                    <p>API Used: TransportforLondon API</p>
                     <div class="text-center btn-resume">View on GitHub</div>
                 </div>
                 <div class="modal-footer">
