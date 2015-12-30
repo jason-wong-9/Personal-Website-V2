@@ -134,4 +134,12 @@ h1 {
     left: 48%;
     cursor: pointer;
 }
+.carousel-indicators .active {
+    background-color: #518bff;
+}
+
+.carousel-indicators li {
+    border: 1px solid #ffddcf;
+}
+
 
