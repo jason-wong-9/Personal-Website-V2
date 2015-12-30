@@ -36,30 +36,6 @@
     animation-fill-mode: both;
 }
 
-/*=== Optional Delays, change values here  ===*/
-.one {
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    animation-delay: 0.4s;
-}
-
-.two {
-    -webkit-animation-delay: 1.7s;
-    -moz-animation-delay: 1.7s;
-    animation-delay: 1.7s;
-}
-
-.three {
-    -webkit-animation-delay: 2.3s;
-    -moz-animation-delay: 2.3s;
-    animation-delay: 2.3s;
-}
-
-.four {
-    -webkit-animation-delay: 3.3s;
-    -moz-animation-delay: 3.3s;
-    animation-delay: 3.3s;
-}
 
 /*=== Animations start here  ===*/
 /*=== FADE IN  ===*/
@@ -227,12 +203,57 @@
 }
 
 
-.bounce-up {
+.bounce-up.one {
       opacity: 0;
       -moz-transition: all 700ms ease-out;
       -webkit-transition: all 700ms ease-out;
       -o-transition: all 700ms ease-out;
       transition: all 700ms ease-out;
+      -moz-transform: translate3d(0px, 200px, 0px);
+      -webkit-transform: translate3d(0px, 200px, 0px);
+      -o-transform: translate(0px, 200px);
+      -ms-transform: translate(0px, 200px);
+      transform: translate3d(0px, 200, 0px);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+}
+.bounce-up.two{
+      opacity: 0;
+      -moz-transition: all 1400ms ease-out;
+      -webkit-transition: all 1400ms ease-out;
+      -o-transition: all 1400ms ease-out;
+      transition: all 1400ms ease-out;
+      -moz-transform: translate3d(0px, 200px, 0px);
+      -webkit-transform: translate3d(0px, 200px, 0px);
+      -o-transform: translate(0px, 200px);
+      -ms-transform: translate(0px, 200px);
+      transform: translate3d(0px, 200, 0px);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+}
+.bounce-up.three{
+      opacity: 0;
+      -moz-transition: all 1400ms ease-out;
+      -webkit-transition: all 1400ms ease-out;
+      -o-transition: all 1400ms ease-out;
+      transition: all 1400ms ease-out;
+      -moz-transform: translate3d(0px, 200px, 0px);
+      -webkit-transform: translate3d(0px, 200px, 0px);
+      -o-transform: translate(0px, 200px);
+      -ms-transform: translate(0px, 200px);
+      transform: translate3d(0px, 200, 0px);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+}
+.bounce-up.four{
+      opacity: 0;
+      -moz-transition: all 2100ms ease-out;
+      -webkit-transition: all 2100ms ease-out;
+      -o-transition: all 2100ms ease-out;
+      transition: all 2100ms ease-out;
       -moz-transform: translate3d(0px, 200px, 0px);
       -webkit-transform: translate3d(0px, 200px, 0px);
       -o-transform: translate(0px, 200px);
