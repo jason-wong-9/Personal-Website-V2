@@ -7,7 +7,15 @@ $(document).ready(function(){
     // navContactActive();
     $(window).on('scroll resize', check_if_in_view);
     $(window).trigger('scroll');
-//    autoCarousel();
+    $('.carousel').carousel({
+        interval: 3000
+    })
+    $('.modal').on('hidden.bs.modal', function () {
+        resetCarousel();
+    });
+    $('.modal').on('show.bs.modal', function () {
+        resetCarousel();
+    });
 });
 
 // navbar color changes when scrolled to introduction div
@@ -64,7 +72,7 @@ var collapse = function() {
 }
 
 
-
+// check if div is in view
 function check_if_in_view() {
     var $animation_elements = $('.animation-element');
     var $window = $(window);
@@ -87,13 +95,13 @@ function check_if_in_view() {
     });
 }
 
-// automatically go to next image in carousel
-function autoCarousel() {
+// Reset Carousel
+function resetCarousel() {
     $('.carousel').carousel({
-        interval: 3000
-    });
+        pause: true,
+        interval: false
+        }).carousel(0);
 }
-
 
 // when scrolled to introduction, nav-intro becomes active
 //var navIntroActive = function(){
