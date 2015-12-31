@@ -157,3 +157,17 @@ h1 {
     margin: 0 auto;
     margin-bottom: 40px;
 }
+#backtotop {
+    margin-left: 90%;
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: blue;
+    cursor: pointer;
+}
+#myself {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#contact {
+    background: pink;
+}

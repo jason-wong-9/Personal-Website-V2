@@ -1,6 +1,7 @@
 $(document).ready(function(){  
-    navbarColorChange();
-    navitemClicked();
+//    navbarColorChange();
+//    navitemClicked();
+    scrollWhenClicked();
     collapse();
     // navIntroActive();
     // navPortfolioActive();
@@ -19,25 +20,25 @@ $(document).ready(function(){
 });
 
 // navbar color changes when scrolled to introduction div
-var navbarColorChange = function(){
-    var scroll_start = 0;
-    var startchange = $('#portfolio');
-    var offset = startchange.offset();
-    if (startchange.length){
-        $(document).scroll(function() { 
-            scroll_start = $(this).scrollTop();
-            if(scroll_start > offset.top - 50.5) {
-                $(".navbar-default").css('visibility', 'visible');
-            } else {
-                $(".navbar-default").css('visibility', 'hidden');
-            }
-        });
-    }
-}
+//var navbarColorChange = function(){
+//    var scroll_start = 0;
+//    var startchange = $('#portfolio');
+//    var offset = startchange.offset();
+//    if (startchange.length){
+//        $(document).scroll(function() { 
+//            scroll_start = $(this).scrollTop();
+//            if(scroll_start > offset.top - 50.5) {
+//                $(".navbar-default").css('visibility', 'visible');
+//            } else {
+//                $(".navbar-default").css('visibility', 'hidden');
+//            }
+//        });
+//    }
+//}
 
-// page scrolls to specified div when nav items are clicked
-var navitemClicked = function(){
-    $("#nav-home").click(function(){
+// page scrolls to specified div when item is clicked
+var scrollWhenClicked = function(){
+    $("#backtotop").click(function(){
         $("html,body").animate({
             scrollTop: $("#coverpage").offset().top-50},
             'slow');
@@ -52,16 +53,16 @@ var navitemClicked = function(){
 //            scrollTop: $("#introduction").offset().top-50},
 //            'slow');
 //    });
-    $("#nav-portfolio a").click(function(){
-        $("html,body").animate({
-            scrollTop: $("#portfolio").offset().top-50},
-            'slow');
-  });
-    $("#nav-contact a").click(function(){
-        $("html,body").animate({
-            scrollTop: $("#contact").offset().top - 50},
-        'slow');
-  });
+//    $("#nav-portfolio a").click(function(){
+//        $("html,body").animate({
+//            scrollTop: $("#portfolio").offset().top-50},
+//            'slow');
+//  });
+//    $("#nav-contact a").click(function(){
+//        $("html,body").animate({
+//            scrollTop: $("#contact").offset().top - 50},
+//        'slow');
+//  });
 }
 
 // nav-collapse hides when nav-item is selected
