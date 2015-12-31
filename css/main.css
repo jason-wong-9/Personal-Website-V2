@@ -75,7 +75,7 @@ p {
     height:300px; 
 }
 #footer {
-    height: 200px;
+    height: 80px;
     background-color: gray;
 }
 .modal {
@@ -140,4 +140,14 @@ h1 {
 
 .carousel-indicators li {
     border: 1px solid #ffddcf;
+}
+#googlemap {
+    margin-bottom: 50px;
+}
+#zmdi-hc-4x {
+    font-size: 5em;
+}
+.social-container {
+    width: 400px;
+    margin: 0 auto;
 }

@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="css/animation.css" type="text/css">
     <link rel="stylesheet" href="css/navbar.css" type="text/css">
 
-    <!-- Custom Javascript -->
-    <script type="text/javascript" src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -138,7 +136,6 @@
                         <ol class="carousel-indicators">
                             <li data-target="#MyCFLCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#MyCFLCarousel" data-slide-to="1" class=""></li>
-                            <li data-target="#MyCFLCarousel" data-slide-to="2" class=""></li>
                         </ol>
 	
 
@@ -152,10 +149,7 @@
                                 <img alt="Second slide" src="img/myCFL/2.JPG" style="margin: auto; height: 310px;">
                                 
                             </div>
-                            <div class="item" style="">
-                                <img alt="Third slide" src="img/myCFL/3.JPG" style="margin: auto; height: 310px;">
-                        
-                            </div>
+        
                         </div>
 
 	
@@ -390,33 +384,31 @@
                 </div>
             </div>
             <div id="googleMap" style="width:100%;height:200px;"></div>
-            
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
-                        <i class="zmdi zmdi-email"></i>
-                        <div class="social-text">jason_19960903<wbr>@hotmail.com</div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
-                        <i class="zmdi zmdi-email"></i>
-                        <div class="social-text">adrianblp<wbr>@gmail.com</div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
-                        <i class="zmdi zmdi-email"></i>
-                        <div class="social-text">adrianblp<wbr>@gmail.com</div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="mailto:adrianblp@gmail.com" title="adrianblp@gmail.com" style="left: 0%; right: 75%">
-                        <i class="zmdi zmdi-email"></i>
-                        <div class="social-text">adrianblp<wbr>@gmail.com</div>
-                    </a>
+            <div class="social-container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="mailto:jason_19960903@hotmail.com">
+                            <i class="zmdi zmdi-hc-4x zmdi-email"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="http://www.github.com/jason-wong-9">
+                            <i class="zmdi zmdi-hc-4x zmdi-github-box"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://www.facebook.com/profile.php?id=100006285301731">
+                            <i class="zmdi zmdi-hc-4x zmdi-facebook-box"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://ca.linkedin.com/in/jasonkcwong">
+                            <i class="zmdi zmdi-hc-4x zmdi-linkedin-box"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
     
@@ -431,12 +423,13 @@
                 zoom:7,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            var marker = new google.maps.Marker({
+            var markerOptions = new google.maps.Marker({
                 position: new google.maps.LatLng(51.508742,-0.120850),
                 map: mapProp,
                 title: 'Hello World!'
             });
             var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var marker = new google.maps.Marker(markerOptions);
         }
 
         function loadScript(){
@@ -448,5 +441,7 @@
 
         window.onload = loadScript;
     </script>
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
