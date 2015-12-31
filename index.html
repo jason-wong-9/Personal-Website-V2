@@ -122,7 +122,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">MyCFL</h4>
+                <h4 class="modal-title"><b>MyCFL</b></h4>
                 </div>
                 <div class="modal-body">
                     <p>A web application that is created during SportsHack in a team of three. It generates a CFL athlete who is most similar to your attributes (e.g. height, weight, and location)  and displays the latest feeds from his social medias</p>
@@ -162,7 +162,7 @@
                         </a>
                     </div>
                     <br/>
-                    <div class="text-center btn-resume" onclick="location.href='https://github.com/jason-wong-9/SportsHack2015'">Explore More</div>
+                    <div class="text-center btn btn-resume" onclick="location.href='https://github.com/jason-wong-9/SportsHack2015'">Explore More</div>
                     <br />
                     
                 </div>
@@ -181,7 +181,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Moscrop Official iOS Application</h4>
+                <h4 class="modal-title"><b>Moscrop Official iOS Application</b></h4>
                 </div>
                 <div class="modal-body">
                     <p>Collaborated with a current student from Moscrop secondary school to develop an iOS application using Swift that displays school’s information, teachers’ contacts as well as recent clubs and events updates</p>
@@ -230,7 +230,7 @@
                         </a>
                     </div>
                     <br/>
-                    <div class="text-center btn-resume" onclick="location.href='https://github.com/IvonLiu/moscrop-secondary-ios'">Explore More</div>
+                    <div class="text-center btn btn-resume" onclick="location.href='https://github.com/IvonLiu/moscrop-secondary-ios'">Explore More</div>
                     
                     <br />
                     
@@ -252,7 +252,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Course Watcher</h4>
+                <h4 class="modal-title"><b>Course Watcher</b></h4>
                 </div>
                 <div class="modal-body">
                     <p>This is the first Java Application that I built from scratch. It serves the purpose of of watching courses on UBC SSC, in which it informs users through emails when there is a seat open for a specific course.</p>
@@ -287,7 +287,7 @@
                     </div>
                     <br/>
                     
-                    <div class="text-center btn-resume" onclick="location.href='https://github.com/jason-wong-9/Personal-Projects/tree/master/Personal%20Projects/Course%20Watcher'">Explore More</div>
+                    <div class="text-center btn btn-resume" onclick="location.href='https://github.com/jason-wong-9/Personal-Projects/tree/master/Personal%20Projects/Course%20Watcher'">Explore More</div>
                     <br />
                 </div>
                 <div class="modal-footer">
@@ -305,7 +305,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Mind The Gap</h4>
+                <h4 class="modal-title"><b>Mind The Gap</b></h4>
                 </div>
                 <div class="modal-body">
                     <p>An android application built in the CPSC 210 course. It displays the rail system in London along with real time data</p>
@@ -383,7 +383,7 @@
                     <h3>Contact Me</h3>
                 </div>
             </div>
-            <div id="googleMap" style="width:100%;height:200px;"></div>
+            <div id="map"></div>
             <div class="social-container">
                 <div class="row">
                     <div class="col-md-3">
@@ -408,39 +408,57 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center btn btn-resume" href="#" data-toggle="modal" data-target="#message-modal">Send me a message</div>
             
         </div>
     </section>
+    
+    <!-- Message Modal -->
+    <div id="message-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Send Me A Message</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Want to get in touch with me? Just fill out this form and I will get back to you as soon as possible.</p>
+                    <br/>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage">Message</label>
+                            <textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <br/>
+                        <div type="submit" class="btn btn-resume">Submit</div>
+                    </form>
+                </div>
+                <br/>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
     
     <!-- Footer -->
     <section id = "footer">
 
     </section>
-    <script>
-        function initialize(){
-            var mapProp = {
-                center: new google.maps.LatLng(51.508742,-0.120850),
-                zoom:7,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var markerOptions = new google.maps.Marker({
-                position: new google.maps.LatLng(51.508742,-0.120850),
-                map: mapProp,
-                title: 'Hello World!'
-            });
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            var marker = new google.maps.Marker(markerOptions);
-        }
-
-        function loadScript(){
-            var script = document.createElement("script");
-            script.type = "text/javascript";
-            script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
-            document.body.appendChild(script);
-        }
-
-        window.onload = loadScript;
-    </script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOAclrm2hpgKbxIuFpyq_pMuHN9-4Gjl0&signed_in=true&callback=initMap"></script>   
     <!-- Custom Javascript -->
     <script type="text/javascript" src="js/main.js"></script>
 </body>
