@@ -27,7 +27,7 @@ p {
         max-width: 800px;
     }
 }
-.btn-resume {
+.btn-modal {
     -webkit-border-radius: 7;
     -moz-border-radius: 7;
     border-radius: 7px;
@@ -45,7 +45,7 @@ p {
     cursor:pointer;
     margin: 0 auto;
 }
-.btn-resume:hover {
+.btn-modal:hover {
     background: #e1f0fa;
     text-decoration: none;
 }
@@ -56,6 +56,9 @@ p {
     #contact .container{
         max-width: 800px;
     }
+}
+#resume {
+    margin-top: 20px;
 }
 #contact .col-md-3 {
     width: 25%;
@@ -79,7 +82,7 @@ p {
 }
 #footer {
     height: 80px;
-    background-color: gray;
+    background-color: #7FB7C8;
 }
 .modal {
   text-align: center;
@@ -168,6 +171,6 @@ h1 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#contact {
-    background: pink;
+#thumbnail {
+    margin-top: 20px;
 }

@@ -1,24 +1,33 @@
 $('#submit').click(function() {
-    $.ajax({
-        type: "POST",
-        url: "https://mandrillapp.com/api/1.0/messages/send.json",
-        data: {
-            'key': 'QSasepJ8JBOZ_bNeAAK1uQ',
-            'message': {
-                'from_email': 'jason_19960903@hotmail.com',
-                'to': [
-                    {
-                        'email': 'jason_19960903@hotmail.com',
-                        'type': 'to'
-                    }
+    var senderName = $("#name").val();
+    var senderEmail = $("#email").val();
+    var senderMessage = $("#message").val();
+    
+    var emailContent = "Name: " + senderName + "\n From: " + senderEmail + "\n Message: \n" + senderMessage;
+    console.log(senderMessage);
+    if ((senderName != "") && (senderEmail != "") && (senderMessage != "")) {
+        $.ajax({
+            type: "POST",
+            url: "https://mandrillapp.com/api/1.0/messages/send.json",
+            data: {
+                'key': 'QSasepJ8JBOZ_bNeAAK1uQ',
+                'message': {
+                    'from_email': 'twistedfate@jasonkcwong.com',
+                    'to': [
+                        {
+                            'email': 'twistedfate@jasonkcwong.com',
+                            'type': 'to'
+                        }
             
-                ],
-                'autotext': 'true',
-                'subject': 'YOUR SUBJECT HERE!',
-                'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+                    ],
+                    'autotext': 'true',
+                    'subject': 'Message From Personal Portfolio',
+                    'html': emailContent
+                }
             }
-        }
-    }).done(function(response) {
-        console.log(response); // if you're into that sorta thing
-    });
+        }).done(function(response) {
+            console.log(response); // if you're into that sorta thing
+        });
+    }
+    
 });
