@@ -3,7 +3,7 @@ $('#submit').click(function() {
     var senderEmail = $("#email").val();
     var senderMessage = $("#message").val();
     
-    var emailContent = "Name: " + senderName + "\n From: " + senderEmail + "\n Message: \n" + senderMessage;
+    var emailContent = "<p>Name: " + senderName + "</p><p>From: " + senderEmail + "</p><p>Message: </p><p>" + senderMessage + "</p>";
     console.log(senderMessage);
     if ((senderName != "") && (senderEmail != "") && (senderMessage != "")) {
         $.ajax({
