@@ -79,7 +79,7 @@ p {
 .thumbnail:hover {
     background: #240B3B;
     background-position: center;
-    background-size: 150% 150%;
+    
 }
 
 #footer {
@@ -164,10 +164,14 @@ h1 {
 }
 #backtotop {
     margin-left: 90%;
-    margin-top: 20px;
-    font-size: 1.3em;
-    color: blue;
+    margin-top: -30px;
     cursor: pointer;
+    float:right;
+}
+#footer p {
+    font-size: 1.3em;
+    color: white;
+    text-shadow: 1px 1px 6px #666666;
 }
 #myself {
     margin-top: 50px;
@@ -179,19 +183,19 @@ h1 {
 
 #thumbnailCFL {
     background-image:url(../img/myCfL/header.jpg);
-    
-}
-#thumbnailCFL {
-    background-image:url(../img/myCfL/header.jpg);
+    background-repeat: no-repeat;
 }
 #thumbnailMoscrop{
     background-image:url(../img/moscrop-ios-app/header.jpg);
+    background-repeat: no-repeat;
 }
 #thumbnailCourse{
     background-image:url(../img/course-watcher/header.jpg);
+    background-repeat: no-repeat;
 }
 #thumbnailMind{
     background-image:url(../img/mind-the-gap/header.jpg);
+    background-repeat: no-repeat;
 }
 #thumbnailCFL:hover > #layerCFL {
     position:absolute;
@@ -267,4 +271,12 @@ h1 {
     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
+}
+#copyright {
+    text-align:center;
+    float:none;
+    margin-top: 20px;
+}
+#backtotop:hover {
+    color:black;
 }
