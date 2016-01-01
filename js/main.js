@@ -13,6 +13,7 @@ $(document).ready(function(){
     })
     $('.modal').on('hidden.bs.modal', function () {
         resetCarousel();
+        resetMessage();
     });
     $('.modal').on('show.bs.modal', function () {
         resetCarousel();
@@ -102,6 +103,13 @@ function resetCarousel() {
         pause: true,
         interval: false
         }).carousel(0);
+}
+
+// Reset message modal 
+function resetMessage() {
+    var htmlString = '<p>Want to get in touch with me? Just fill out this form and I will get back to you as soon as possible.</p><br/><form><div class="form-group"><label for="inputName">Name</label><input type="text" class="form-control" id="name" placeholder="Name"></div><div class="form-group"><label for="inputEmail">Email address</label><input type="email" class="form-control" id="email" placeholder="Email"></div><div class="form-group"><label for="inputMessage">Message</label><textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea></div><br/><div type="submit" id="submit" class="btn btn-modal">Submit</div></form>';
+
+    $("#message-modal .modal-body").html(htmlString);
 }
 
 // when scrolled to introduction, nav-intro becomes active

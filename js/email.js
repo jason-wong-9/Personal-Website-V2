@@ -26,7 +26,8 @@ $('#submit').click(function() {
                 }
             }
         }).done(function(response) {
-            console.log(response); // if you're into that sorta thing
+            var htmlString = "<p>Thank you for the message! I will get back to you shortly.</p>";
+            $("#message-modal .modal-body").html(htmlString);
         });
     }
     
