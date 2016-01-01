@@ -72,14 +72,13 @@ p {
 }
 .thumbnail {
     background: #210B61;
+    min-height:300px;
+    height:300px; 
 }
 .thumbnail:hover {
     background: #240B3B;
 }
-.thumbnail img { 
-    min-height:300px;
-    height:300px; 
-}
+
 #footer {
     height: 80px;
     background-color: #7FB7C8;
@@ -173,4 +172,17 @@ h1 {
 }
 #thumbnail {
     margin-top: 20px;
+}
+
+#thumbnailCFL {
+    background-image:url(../img/myCfL/header.jpg);
+}
+#thumbnailMoscrop{
+    background-image:url(../img/moscrop-ios-app/header.jpg);
+}
+#thumbnailCourse{
+    background-image:url(../img/course-watcher/header.jpg);
+}
+#thumbnailMind{
+    background-image:url(../img/mind-the-gap/header.jpg);
 }
