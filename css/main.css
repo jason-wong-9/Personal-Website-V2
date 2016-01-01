@@ -197,7 +197,7 @@ h1 {
     background-image:url(../img/mind-the-gap/header.jpg);
     background-repeat: no-repeat;
 }
-#thumbnailCFL:hover > #layerCFL {
+#layerCFL {
     position:absolute;
     min-height:300px;
     height:300px;
@@ -235,9 +235,10 @@ h1 {
 }
 
 #thumbnail p {
-    color:white;
+    color:black;
     font-size:3em;
     font-weight:bold;
+    line-height: 300px;  
 }
 
 .btn-body {
@@ -279,4 +280,28 @@ h1 {
 }
 #backtotop:hover {
     color:black;
+}
+#textCFL {
+    visibility:hidden;
+}
+#textMoscrop {
+    visibility:hidden;
+}
+#textCourse {
+    visibility:hidden;
+}
+#textMind {
+    visibility:hidden;
+}
+#thumbnailCFL:hover > #layerCFL > #textCFL {
+    visibility: visible;
+}
+#thumbnailMoscrop:hover > #layerMoscrop > #textMoscrop {
+    visibility: visible;
+}
+#thumbnailCourse:hover > #layerCourse > #textCourse {
+    visibility: visible;
+}
+#thumbnailMind:hover > #layerMind > #textMind {
+    visibility: visible;
 }
