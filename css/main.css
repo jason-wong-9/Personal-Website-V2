@@ -74,9 +74,12 @@ p {
     background: #210B61;
     min-height:300px;
     height:300px; 
+    background-position: center;
 }
 .thumbnail:hover {
     background: #240B3B;
+    background-position: center;
+    background-size: 150% 150%;
 }
 
 #footer {
@@ -176,6 +179,10 @@ h1 {
 
 #thumbnailCFL {
     background-image:url(../img/myCfL/header.jpg);
+    
+}
+#thumbnailCFL {
+    background-image:url(../img/myCfL/header.jpg);
 }
 #thumbnailMoscrop{
     background-image:url(../img/moscrop-ios-app/header.jpg);
@@ -186,3 +193,41 @@ h1 {
 #thumbnailMind{
     background-image:url(../img/mind-the-gap/header.jpg);
 }
+#thumbnailCFL:hover > #layerCFL {
+    position:absolute;
+    min-height:300px;
+    height:300px;
+    width:calc(100% - 30px);
+    background-color: rgba(248, 161, 40, 0.7);
+    margin-top:-5px;
+    margin-left:-5px;
+}
+#thumbnailMoscrop:hover > #layerMoscrop {
+    position:absolute;
+    min-height:300px;
+    height:300px;
+    width:calc(100% - 30px);
+    background-color: rgba(159, 151, 217, 0.7);
+    margin-top:-5px;
+    margin-left:-5px;
+}
+#thumbnailCourse:hover > #layerCourse {
+    position:absolute;
+    min-height:300px;
+    height:300px;
+    width:calc(100% - 30px);
+    background-color: rgba(144, 254, 199, 0.7);
+    margin-top:-5px;
+    margin-left:-5px;
+}
+#thumbnailMind:hover > #layerMind {
+    position:absolute;
+    min-height:300px;
+    height:300px;
+    width:calc(100% - 30px);
+    background-color: rgba(146, 41, 246, 0.7);
+    margin-top:-5px;
+    margin-left:-5px;
+}
+
+
