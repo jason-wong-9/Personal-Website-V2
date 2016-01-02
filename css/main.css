@@ -118,6 +118,10 @@ h1 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 @media (min-width: 992px) {
     #myselfContent {
         margin-top:60px;
