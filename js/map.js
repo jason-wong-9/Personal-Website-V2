@@ -1,4 +1,5 @@
 function initMap() {
+    //Vancouver
     var myLatLng = {lat: 49.246292, lng: -123.116226};
 
     var map = new google.maps.Map(document.getElementById('map'), {
