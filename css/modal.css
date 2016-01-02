@@ -1,3 +1,31 @@
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+/*modal parts*/
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal-content {
+    border: 5px solid #7FB7C8;
+}
+.modal-body {
+    margin-left: 10px;
+}
+
+/*modal button*/
 .btn-modal {
     -webkit-border-radius: 7;
     -moz-border-radius: 7;
@@ -19,4 +47,13 @@
 .btn-modal:hover {
     background: #e1f0fa;
     text-decoration: none;
+}
+
+/*carousel*/
+.carousel-indicators .active {
+    background-color: #518bff;
+}
+
+.carousel-indicators li {
+    border: 1px solid #ffddcf;
 }

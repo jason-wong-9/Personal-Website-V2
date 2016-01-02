@@ -1,19 +1,10 @@
+/*Entire Page*/
 body {
     width: 100%;
     height: 100%;
     font-family: "Open Sans", sans-serif;
 }
 
-#coverpage {
-    margin-top:-20px;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    background: url(../img/header.jpg) no-repeat center center fixed;
-    background-position: center;
-    background-size: cover;
-}
 
 h3 {
     font-size: 3em;
@@ -26,200 +17,22 @@ p {
     #introduction .container{
         max-width: 800px;
     }
-}
-.btn {
-    display:block;
-}
-@media (min-width: 1200px) {
     #contact .container{
         max-width: 800px;
     }
 }
-#resume {
-    margin-top: 30px;
+.btn {
+    display:block;
 }
-#contact .col-md-3 {
-    width: 25%;
-    float: left;
-}
+
+
+
 #introduction, #portfolio, #contact {
     padding-top: 40px;
 }
-#contact {
-    padding-bottom: 70px;
-}
-.thumbnail {
-    background: #210B61;
-    min-height:300px;
-    height:300px; 
-    background-position: center;
-}
-.thumbnail:hover {
-    background: #240B3B;
-    background-position: center;
-    
-}
 
-#footer {
-    height: 80px;
-    background-color: #7FB7C8;
-}
-.modal {
-  text-align: center;
-  padding: 0!important;
-}
 
-.modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px; /* Adjusts for spacing */
-}
-
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
-.modal-content {
-    border: 5px solid #7FB7C8;
-}
-.modal-body {
-    margin-left: 10px;
-}
-h1 {
-    font-size: 7em;
-}
-
-.zmdi-hc-5x {
-    font-size: 7em;
-}
-#tagname {
-    top: 30%;
-    position: relative;
-    transform: translateY(-50%);
-}
-#tagline {
-    font-size: 2em;
-}
-@media only screen and (max-width: 720px) {
-    h1 {
-        font-size: 4em;
-    }
-    #tagline {
-        font-size: 1em;
-    }
-    #tagname {
-        top: 40%;
-    }
-}
-#arrowdown {
-    position: absolute;
-    bottom: 0;
-    left: 48%;
-    cursor: pointer;
-}
-.carousel-indicators .active {
-    background-color: #518bff;
-}
-
-.carousel-indicators li {
-    border: 1px solid #ffddcf;
-}
-#map {
-    margin-bottom: 50px;
-    width:100%;
-    height:200px;
-}
-#zmdi-hc-4x {
-    font-size: 5em;
-}
-.social-container {
-    width: 400px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-#backtotop {
-    margin-left: 90%;
-    margin-top: -30px;
-    cursor: pointer;
-    float:right;
-}
-#footer p {
-    font-size: 1.3em;
-    color: white;
-    text-shadow: 1px 1px 6px #666666;
-}
-#myself {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-#thumbnail {
-    margin-top: 20px;
-}
-
-#thumbnailCFL {
-    background-image:url(../img/myCfL/header.jpg);
-    background-repeat: no-repeat;
-}
-#thumbnailMoscrop{
-    background-image:url(../img/moscrop-ios-app/header.jpg);
-    background-repeat: no-repeat;
-}
-#thumbnailCourse{
-    background-image:url(../img/course-watcher/header.jpg);
-    background-repeat: no-repeat;
-}
-#thumbnailMind{
-    background-image:url(../img/mind-the-gap/header.jpg);
-    background-repeat: no-repeat;
-}
-#thumbnailCFL:hover > #layerCFL {
-    position:absolute;
-    min-height:300px;
-    height:300px;
-    width:calc(100% - 30px);
-    background-color: rgba(248, 161, 40, 0.8);
-    margin-top:-5px;
-    margin-left:-5px;
-}
-#thumbnailMoscrop:hover > #layerMoscrop {
-    position:absolute;
-    min-height:300px;
-    height:300px;
-    width:calc(100% - 30px);
-    background-color: rgba(159, 151, 217, 0.8);
-    margin-top:-5px;
-    margin-left:-5px;
-}
-#thumbnailCourse:hover > #layerCourse {
-    position:absolute;
-    min-height:300px;
-    height:300px;
-    width:calc(100% - 30px);
-    background-color: rgba(144, 254, 199, 0.8);
-    margin-top:-5px;
-    margin-left:-5px;
-}
-#thumbnailMind:hover > #layerMind {
-    position:absolute;
-    min-height:300px;
-    height:300px;
-    width:calc(100% - 30px);
-    background-color: rgba(146, 41, 246, 0.8);
-    margin-top:-5px;
-    margin-left:-5px;
-}
-
-#thumbnail p {
-    color:white;
-    font-size:2em;
-    font-weight:bold;
-    line-height: 300px;  
-    text-shadow: 1px 1px 6px #666666;
-}
-
+/*Button for body*/
 .btn-body {
     background: #61d6e6;
     background-image: -webkit-linear-gradient(top, #61d6e6, #199c9c);
@@ -252,35 +65,104 @@ h1 {
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
 }
-#copyright {
-    text-align:center;
-    float:none;
-    margin-top: 20px;
+
+/*Cover Page*/
+#coverpage {
+    margin-top:-20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: url(../img/header.jpg) no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+    font-size: 7em;
+}
+#tagname {
+    top: 30%;
+    position: relative;
+    transform: translateY(-50%);
+}
+#tagline {
+    font-size: 2em;
+}
+@media only screen and (max-width: 720px) {
+    h1 {
+        font-size: 4em;
+    }
+    #tagline {
+        font-size: 1em;
+    }
+    #tagname {
+        top: 40%;
+    }
+}
+.zmdi-hc-5x {
+    font-size: 7em;
+}
+#arrowdown {
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    cursor: pointer;
+}
+
+
+/*Portfolio*/
+/*In a different file because it is a bit too long*/
+
+/*Myself*/
+#myself {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Contact*/
+#contact {
+    padding-bottom: 70px;
+}
+#contact .col-md-3 {
+    width: 25%;
+    float: left;
+}
+#map {
+    margin-bottom: 50px;
+    width:100%;
+    height:200px;
+}
+.social-container {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+#zmdi-hc-4x {
+    font-size: 5em;
+}
+
+
+/*Footer*/
+#footer {
+    height: 80px;
+    background-color: #7FB7C8;
+}
+#footer p {
+    font-size: 1.3em;
+    color: white;
+    text-shadow: 1px 1px 6px #666666;
+}
+#backtotop {
+    margin-left: 90%;
+    margin-top: -30px;
+    cursor: pointer;
+    float:right;
 }
 #backtotop:hover {
     color:black;
 }
-#textCFL {
-    visibility:hidden;
-}
-#textMoscrop {
-    visibility:hidden;
-}
-#textCourse {
-    visibility:hidden;
-}
-#textMind {
-    visibility:hidden;
-}
-#thumbnailCFL:hover > #layerCFL > #textCFL {
-    visibility: visible;
-}
-#thumbnailMoscrop:hover > #layerMoscrop > #textMoscrop {
-    visibility: visible;
-}
-#thumbnailCourse:hover > #layerCourse > #textCourse {
-    visibility: visible;
-}
-#thumbnailMind:hover > #layerMind > #textMind {
-    visibility: visible;
+#copyright {
+    text-align:center;
+    float:none;
+    margin-top: 20px;
 }
