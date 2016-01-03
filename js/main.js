@@ -1,7 +1,9 @@
 $(document).ready(function(){  
     scrollWhenClicked();
-    $(window).on('scroll resize', check_if_in_view);
-    $(window).trigger('scroll');
+    $(window).load(function(){
+        $(window).on('scroll resize', check_if_in_view);
+        $(window).trigger('scroll');
+    });
     $('.carousel').carousel({
         interval: 3000
     })
@@ -49,13 +51,18 @@ function check_if_in_view() {
         //check to see if this current container is within viewport
         if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
             $element.addClass('in-view');
+            console.log(element_bottom_position);
+            console.log(window_top_position);
             console.log("in-view added");
         } else {
             $element.removeClass('in-view');
+            console.log(element_bottom_position);
+            console.log(window_top_position);
             console.log("in-view removed");
         }
     });
 }
+
 
 // Reset Carousel
 function resetCarousel() {
