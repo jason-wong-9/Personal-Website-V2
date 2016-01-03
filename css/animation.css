@@ -64,10 +64,10 @@
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-transition: all 1400ms ease-out;
-    -webkit-transition: all 1400ms ease-out;
-    -o-transition: all 1400ms ease-out;
-    transition: all 1400ms ease-out;
+    -moz-transition: all 3000ms ease-out;
+    -webkit-transition: all 3000ms ease-out;
+    -o-transition: all 3000ms ease-out;
+    transition: all 3000ms ease-out;
 }
 
 .zoomIn.in-view {
