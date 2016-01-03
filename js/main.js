@@ -60,6 +60,8 @@ function check_if_in_view() {
             console.log(window_top_position);
             console.log("in-view removed");
         }
+        
+        
     });
 }
 
