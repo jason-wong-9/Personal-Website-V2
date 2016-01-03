@@ -2,7 +2,6 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Open Sans", sans-serif;
 }
 
 
@@ -25,7 +24,11 @@ p {
     display:block;
 }
 
-
+#myself, #footer, h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+#myself
 
 #introduction, #portfolio, #contact {
     padding-top: 40px;
@@ -77,7 +80,7 @@ p {
     background-position: center;
     background-size: cover;
     font-family: 'Vollkorn', serif;
-    text-shadow: 1px 1px 6px #666666;
+    
 }
 h1 {
     font-size: 7em;
@@ -124,9 +127,16 @@ h1 {
     margin-right: 0;
     margin-left: 0;
 }
+#myselfContent h2{
+    font-weight: 600;
+    text-align:center;
+}
 @media (min-width: 992px) {
     #myselfContent {
         margin-top:60px;
+    }
+    #myselfContent h2 {
+        text-align:left;
     }
 
 }
@@ -134,6 +144,7 @@ h1 {
     margin-left:10px;
     margin-right:10px;
 }
+
 
 /*Contact*/
 #contact {
