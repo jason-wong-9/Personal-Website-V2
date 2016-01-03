@@ -15,7 +15,7 @@ $(document).ready(function(){
 });
 
 
-// page scrolls to specified div when item is clicked
+// Page scrolls to specified div when item is clicked
 var scrollWhenClicked = function(){
     $("#backtotop").click(function(){
         $("html,body").animate({
@@ -30,7 +30,7 @@ var scrollWhenClicked = function(){
 }
 
 
-// check if div is in view
+// Check if div is in view
 // Taken from http://www.sitepoint.com/scroll-based-animations-jquery-css3/#scroll-animation-examples
 
 function check_if_in_view() {
@@ -49,8 +49,10 @@ function check_if_in_view() {
         //check to see if this current container is within viewport
         if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
             $element.addClass('in-view');
+            console.log("in-view added");
         } else {
             $element.removeClass('in-view');
+            console.log("in-view removed");
         }
     });
 }
