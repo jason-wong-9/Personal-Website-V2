@@ -58,6 +58,22 @@
     animation-name: fadeInUp;
 }
 
+/*Zoom In*/
+.zoomIn {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transition: all 1400ms ease-out;
+    -webkit-transition: all 1400ms ease-out;
+    -o-transition: all 1400ms ease-out;
+    transition: all 1400ms ease-out;
+}
+
+.zoomIn.in-view {
+    opacity: 1;
+}
+
 /*Bounce Up For thumbnails*/
 
 .bounce-up{
