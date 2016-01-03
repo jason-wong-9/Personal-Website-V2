@@ -21,12 +21,12 @@ $(document).ready(function(){
 var scrollWhenClicked = function(){
     $("#backtotop").click(function(){
         $("html,body").animate({
-            scrollTop: $("#coverpage").offset().top-50},
+            scrollTop: $("#coverpage").offset().top},
             'slow');
     });
     $("#arrowdown").click(function(){
         $("html,body").animate({
-            scrollTop: $("#portfolio").offset().top-50},
+            scrollTop: $("#portfolio").offset().top},
             'slow');
     });
 }
