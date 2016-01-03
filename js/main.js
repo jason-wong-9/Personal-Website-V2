@@ -31,6 +31,8 @@ var scrollWhenClicked = function(){
 
 
 // check if div is in view
+// Taken from http://www.sitepoint.com/scroll-based-animations-jquery-css3/#scroll-animation-examples
+
 function check_if_in_view() {
     var $animation_elements = $('.animation-element');
     var $window = $(window);
