@@ -49,12 +49,7 @@ function check_if_in_view() {
         var element_bottom_position = (element_top_position + element_height);
 
         //check to see if this current container is within viewport
-//        if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-//            $element.addClass('in-view');
-//        } else {
-//            $element.removeClass('in-view');
-//        }
-        if(isScrolledIntoView($element)){
+        if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
             $element.addClass('in-view');
         } else {
             $element.removeClass('in-view');
@@ -63,19 +58,6 @@ function check_if_in_view() {
     });
 }
 
-function isScrolledIntoView(elem)
-{
-    var $elem = $(elem);
-    var $window = $(window);
-
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
 
 
 // Reset Carousel
