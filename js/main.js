@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
     $('.carousel').carousel({
         interval: 3000
-    });
+    })
     $('.modal').on('hidden.bs.modal', function () {
         resetCarousel();
         resetMessage();
