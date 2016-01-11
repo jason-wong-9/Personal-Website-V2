@@ -13,6 +13,12 @@ $(document).ready(function(){
     });
     $('.modal').on('show.bs.modal', function () {
         resetCarousel();
+        var urlReplace = "#" + $(this).attr('id'); 
+        history.pushState(null, null, urlReplace); 
+    });
+    
+    $(window).on('popstate', function() { 
+        $(".modal").modal('hide');
     });
 });
 
