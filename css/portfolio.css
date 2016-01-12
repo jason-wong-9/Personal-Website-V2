@@ -23,7 +23,7 @@
 }
 /*CFL*/
 #thumbnailCFL {
-    background-image:url(../img/myCFL/header.jpg);
+    background-image:url(../img/myCFL/header-min.jpg);
     background-repeat: no-repeat;
 }
 #thumbnailCFL:hover > #layerCFL {
@@ -45,7 +45,7 @@
 /*Moscrop*/
 
 #thumbnailMoscrop{
-    background-image:url(../img/moscrop-ios-app/header.jpg);
+    background-image:url(../img/moscrop-ios-app/header-min.jpg);
     background-repeat: no-repeat;
 }
 #thumbnailMoscrop:hover > #layerMoscrop {
@@ -66,7 +66,7 @@
 
 /*Course Watcher*/
 #thumbnailCourse{
-    background-image:url(../img/course-watcher/header.jpg);
+    background-image:url(../img/course-watcher/header-min.jpg);
     background-repeat: no-repeat;
 }
 #thumbnailCourse:hover > #layerCourse {
@@ -87,7 +87,7 @@
 
 /*Mind The Gap*/
 #thumbnailMind{
-    background-image:url(../img/mind-the-gap/header.jpg);
+    background-image:url(../img/mind-the-gap/header-min.jpg);
     background-repeat: no-repeat;
 }
 #thumbnailMind:hover > #layerMind {
