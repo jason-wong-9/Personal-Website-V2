@@ -52,13 +52,13 @@
             </div>
             <div class="row text-center" id="thumbnail">
                 <div class="col-md-6 animation-element bounce-up one">
-                    <a id="thumbnailCFL" class="thumbnail" href="#" data-toggle="modal" data-target="#MyCFLModal">
-                        <div id="layerCFL"><p id="textCFL">MyCFL</p></div>
+                    <a id="thumbnailMoscrop" class="thumbnail" href="#" data-toggle="modal" data-target="#moscrop-modal">
+                        <div id="layerMoscrop"><p id="textMoscrop">Moscrop iOS Application</p></div>
                     </a>
                 </div>
                 <div class="col-md-6 animation-element bounce-up two">
-                    <a id="thumbnailMoscrop" class="thumbnail" href="#" data-toggle="modal" data-target="#moscrop-modal">
-                        <div id="layerMoscrop"><p id="textMoscrop">Moscrop iOS Application</p></div>
+                    <a id="thumbnailCFL" class="thumbnail" href="#" data-toggle="modal" data-target="#MyCFLModal">
+                        <div id="layerCFL"><p id="textCFL">MyCFL</p></div>
                     </a>
                 </div>
                 <div class="col-md-6 animation-element bounce-up three">
@@ -75,65 +75,6 @@
             <div class="btn btn-body" id="resume" onclick="location.href='docs/current_resume.pdf'">View Resume</div>
         </div>
     </section>
-    
-    <!-- MyCFL Modal -->
-    <div id="MyCFLModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"><b>MyCFL</b></h4>
-                </div>
-                <div class="modal-body">
-                    <p>A web application that is created during SportsHack in a team of three. It generates a CFL athlete who is most similar to your attributes (e.g. height, weight, and location)  and displays the latest feeds from his social medias</p>
-                    <br/>
-                    <p><b>Front-End Development:</b> HTML, CSS, Javascript</p>
-                    <p><b>Back-End Development:</b> Parse (Database), Python (Cosine Similarity for data analysis), Flask (RESTful API)</p>
-                    <br/>
-                    <div id="MyCFLCarousel" class="carousel slide carousel-fit" style="margin-top: 0px; height: 310px; background: red;">
-	
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#MyCFLCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#MyCFLCarousel" data-slide-to="1" class=""></li>
-                        </ol>
-	
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active" style="">
-                                <img alt="First slide" src="img/myCFL/1-min.JPG" style="margin: auto; height: 310px;">
-                                
-                            </div>
-                            <div class="item" style="">
-                                <img alt="Second slide" src="img/myCFL/2-min.JPG" style="margin: auto; height: 310px;">
-                                
-                            </div>
-        
-                        </div>
-
-	
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#MyCFLCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#MyCFLCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>
-                    <br/>
-                    <div class="text-center btn btn-modal" onclick="location.href='https://github.com/jason-wong-9/SportsHack2015'">Explore More</div>
-                    <br />
-                    
-                </div>
-                <div class="modal-footer">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
     
     <!-- Moscrop Official iOS Application Modal -->
     <div id="moscrop-modal" class="modal fade" role="dialog">
@@ -203,6 +144,65 @@
             </div>
             
 
+        </div>
+    </div>
+    
+    <!-- MyCFL Modal -->
+    <div id="MyCFLModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><b>MyCFL</b></h4>
+                </div>
+                <div class="modal-body">
+                    <p>A web application that is created during SportsHack in a team of three. It generates a CFL athlete who is most similar to your attributes (e.g. height, weight, and location)  and displays the latest feeds from his social medias</p>
+                    <br/>
+                    <p><b>Front-End Development:</b> HTML, CSS, Javascript</p>
+                    <p><b>Back-End Development:</b> Parse (Database), Python (Cosine Similarity for data analysis), Flask (RESTful API)</p>
+                    <br/>
+                    <div id="MyCFLCarousel" class="carousel slide carousel-fit" style="margin-top: 0px; height: 310px; background: red;">
+	
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#MyCFLCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#MyCFLCarousel" data-slide-to="1" class=""></li>
+                        </ol>
+	
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active" style="">
+                                <img alt="First slide" src="img/myCFL/1-min.JPG" style="margin: auto; height: 310px;">
+                                
+                            </div>
+                            <div class="item" style="">
+                                <img alt="Second slide" src="img/myCFL/2-min.JPG" style="margin: auto; height: 310px;">
+                                
+                            </div>
+        
+                        </div>
+
+	
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#MyCFLCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#MyCFLCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                    <br/>
+                    <div class="text-center btn btn-modal" onclick="location.href='https://github.com/jason-wong-9/SportsHack2015'">Explore More</div>
+                    <br />
+                    
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
         </div>
     </div>
     
