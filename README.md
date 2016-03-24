@@ -1,9 +1,16 @@
-# Personal-Website-V2
-Completed for Now
-<br/>
-Still have some bugs:
-<br/>
-<ul>
-  <li>Animation with Google Chrome and Mozilla Firefox is not working properly</li>
-  <li><strike>Contact Form doesn't work for mobile</strike></li>
-</ul>
+# Personal Portfolio
+An e-portfolio to showcase my skills, projects I have worked on, and work & volunteer experience.
+
+![portfolio]()
+
+##Installation and Usage
+Hosted at [http://jasonkcwong.com](http://jasonkcwong.com)
+
+##Technologies Used
+**Frontend:** HTML5, CSS3, JavaScript
+
+##License
+Licensed under the ISC License.
+
+##Troubleshooting/Contact
+If having issues, contact j.wong.9@alumni.ubc.ca for help.
